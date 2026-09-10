@@ -118,13 +118,6 @@ what can maybe make it not plain?
     X: 0 | Y: 0
 </div>
 
-<!-- The tracking logic -->
-<script>
-    window.addEventListener('mousemove', function(e) {
-        let tracker = document.getElementById('coordTracker');
-        // e.clientX is position from left wall, e.clientY is position from top wall
-        tracker.innerHTML = `X: ${e.clientX}px | Y: ${e.clientY}px`;
-    });
 </script>
 </body>
 </html>
