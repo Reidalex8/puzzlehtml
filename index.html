@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Solve the puzzle. Good luck.</title>
-    <h1>solve the puzzle. good luck. just know you can always use tissues.</h1>
+    <h1>solve the puzzle. good luck. just know you can always use tissues, im serious btw.</h1>
 
     <style>
         body {
@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-here is the puzzle that i coded myself. you guys should never give up. Never gIve up, Don't. no.1 party Anthem is oNe of my favorite songs.
+here is the puzzle that i coded. Never gIve up, Don't. no.1 party ANthem goated.
 <br>
 <br>
 who is one of my closest friends? might wanna send them a quick message and befriend them instead of asking them directly. If you miss this crucial step, anything can go wrong.
@@ -29,6 +29,88 @@ hmm why is ROYAL a weird word? white looks plain, no?
 <br>
 what can maybe make it not plain?
 <br>
-the answer is RIGHT INFRONT of you, but do you know where to look?
+<br>
+<button class="menu-btn" onclick="openMenu()">Open Menu</button>
+
+<!-- The Full-Screen Overlay Menu -->
+<div id="fullscreenMenu" class="overlay-menu">
+    <div class="menu-content">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <h1>🔓 Security Override</h1>
+        <p>This text appears inside the centered menu covering the screen.</p>
+    </div>
+</div>
+
+<!-- Styling -->
+<style>
+    /* Button styles */
+    .menu-btn {
+        background-color: #ffffff;
+        color: #121212;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .menu-btn:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Full-screen dark translucent backdrop */
+    .overlay-menu {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+        z-index: 99999; /* Forces it over everything else */
+    }
+
+    /* Centered content box */
+    .menu-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #121212;
+        color: #4CAF50;
+        padding: 40px;
+        border: 2px solid #4CAF50;
+        border-radius: 12px;
+        text-align: center;
+        font-family: monospace;
+        min-width: 300px;
+        box-shadow: 0px 0px 20px rgba(76, 175, 80, 0.3);
+    }
+
+    /* Close button text (X) */
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .close-btn:hover {
+        color: white;
+    }
+</style>
+
+<!-- Logic Actions -->
+<script>
+    function openMenu() {
+        document.getElementById("fullscreenMenu").style.display = "block";
+    }
+
+    function closeMenu() {
+        document.getElementById("fullscreenMenu").style.display = "none";
+    }
+</script>
 </body>
 </html>
